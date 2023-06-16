@@ -21,8 +21,8 @@ client = MongoClient(url)
 db = client.pytech
 
 """ three student documents"""
-# Thorin Oakenshield's data document 
-thorin = {
+# John Redcrow's data document 
+Redcrow = {
     "student_id": "1007",
     "first_name": "John",
     "last_name": "Redcrow",
@@ -51,8 +51,8 @@ thorin = {
 
 }
 
-# Bilbo Baggins data document 
-bilbo = {
+# Mark Wahlburg's data document 
+Wahlburg = {
     "student_id": "1008",
     "first_name": "Mark",
     "last_name": "Wahlburg",
@@ -80,11 +80,11 @@ bilbo = {
     ]
 }
 
-# Frodo Baggins data document
-frodo = {
+# Mc Hammer's data document
+Hammer = {
     "student_id": "1009",
-    "first_name": "Donny",
-    "last_name": "Wahlburg",
+    "first_name": "Mc",
+    "last_name": "Hammer",
     "enrollments": [
         {
             "term": "Session 2",
@@ -114,13 +114,13 @@ students = db.students
 
 # insert statements with output 
 print("\n  -- INSERT STATEMENTS --")
-thorin_student_id = students.insert_one(thorin).inserted_id
-print("  Inserted student record Thorin Oakenshield into the students collection with document_id " + str(thorin_student_id))
+redcrow_student_id = students.insert_one(Redcrow).inserted_id
+print("  Inserted student record John Redcrow into the students collection with document_id " + str(redcrow_student_id))
 
-bilbo_student_id = students.insert_one(bilbo).inserted_id
-print("  Inserted student record Bilbo Baggins into the students collection with document_id " + str(bilbo_student_id))
+wahlburg_student_id = students.insert_one(Wahlburg).inserted_id
+print("  Inserted student record Mark Wahlburg into the students collection with document_id " + str(wahlburg_student_id))
 
-frodo_student_id = students.insert_one(frodo).inserted_id
-print("  Inserted student record Frodo Baggins into the students collection with document_id " + str(frodo_student_id))
+hammer_student_id = students.insert_one(Hammer).inserted_id
+print("  Inserted student record Mc Hammer into the students collection with document_id " + str(hammer_student_id))
 
 input("\n\n  End of program, press any key to exit... ")
