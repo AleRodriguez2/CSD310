@@ -36,7 +36,7 @@ for doc in student_list:
 test_doc = {
     "student_id": "1010",
     "first_name": "John",
-    "last_name": "Doe"
+    "last_name": "McClane"
 }
 
 # insert the test document into MongoDB atlas 
