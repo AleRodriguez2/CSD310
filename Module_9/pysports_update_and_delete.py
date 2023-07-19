@@ -1,7 +1,9 @@
 """ 
     Title: pysports_update_and_delete.py
     Author: Professor Krasso
+    Modified By: Alejandro Rodriguez 
     Date: 16 July 2020
+    Modified Date: 9 July 2023
     Description: Test program for inserting, updating, and deleting records from the pysports database
 """
 

@@ -1,7 +1,9 @@
 """ 
     Title: pysports_join_queries.py
     Author: Professor Krasso
+    Modified By: Alejandro Rodriguez 
     Date: 16 July 2020
+    Modified Date: 9 July 2023 
     Description: Test program for joining the player and team tables
 """
 
